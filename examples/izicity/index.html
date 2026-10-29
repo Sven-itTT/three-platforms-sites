@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Концепт главной страницы IziCity">
+  <title>IziCity - дом начинается с решения</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body class="site-izi">
+  <header class="site-shell site-header">
+    <a class="wordmark" href="../../">izicity<small>дом начинается с решения</small></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#paths">Каталог</a>
+      <a href="#journal">Журнал</a>
+      <a href="#tariffs">Тарифы</a>
+    </nav>
+    <a class="header-action button-izi" href="#tariffs">Подать объявление</a>
+    <button class="menu-button" type="button" aria-expanded="false">Меню</button>
+  </header>
+
+  <main>
+    <section class="site-shell hero izi-hero">
+      <div class="izi-hero-grid">
+        <div class="reveal">
+          <h1>Дом начинается<br>с <span>решения.</span></h1>
+          <p class="lead">Недвижимость, материалы и специалисты для следующего шага - в одном маршруте.</p>
+          <form class="search-bar" data-izi-search>
+            <input name="query" type="search" placeholder="Что нужно решить?" aria-label="Поиск по IziCity">
+            <button class="button button-izi" type="submit">Найти</button>
+          </form>
+          <p class="muted" data-search-note>Показываем несколько примеров для старта.</p>
+        </div>
+        <div class="hero-route reveal" aria-label="Схема маршрута от задачи к решению">
+          <span class="route-line one"></span><span class="route-line two"></span><span class="route-line three"></span>
+          <span class="route-node a"></span><span class="route-node b"></span><span class="route-node c"></span><span class="route-node d"></span>
+          <span class="route-house"></span><span class="route-caption">маршрут проекта</span>
+        </div>
+      </div>
+    </section>
+
+    <figure class="site-shell pdf-preview reveal">
+      <img src="../../assets/previews/izi-preview.png" alt="Эскиз главной страницы IziCity из отчёта" loading="lazy">
+      <figcaption>Эскиз из отчёта: маршрут от задачи к решению.</figcaption>
+    </figure>
+
+    <section class="site-shell section reveal" id="paths">
+      <h2 class="section-heading">Выберите задачу,<br>а не раздел.</h2>
+      <p class="section-intro">Каталог остаётся большим, но первый шаг становится коротким. Нажмите на путь - поиск подставится сам.</p>
+      <div class="izi-paths">
+        <button class="path-card card reveal" type="button" data-search-value="жильё"><strong>Найти жильё</strong><p>Купить, снять или продать квартиру, дом и участок.</p><span class="path-link">Открыть путь →</span></button>
+        <button class="path-card card reveal" type="button" data-search-value="материалы"><strong>Собрать материалы</strong><p>Стройматериалы, инструменты и товары для ремонта.</p><span class="path-link">Открыть путь →</span></button>
+        <button class="path-card card reveal" type="button" data-search-value="специалист"><strong>Выбрать специалиста</strong><p>Найти мастера, бригаду или компанию по задаче.</p><span class="path-link">Открыть путь →</span></button>
+      </div>
+    </section>
+
+    <section class="site-shell section reveal" id="results">
+      <div class="result-layout">
+        <div>
+          <h2 class="section-heading">Живой каталог<br>с первого экрана.</h2>
+          <p class="section-intro">Карточки ниже показывают, что пользователь увидит после поиска: город, цена и понятный следующий шаг.</p>
+          <a class="button button-izi" href="#tariffs">Разместить своё</a>
+        </div>
+        <div class="result-list">
+          <article class="result-card reveal" data-result data-search-tags="жильё квартира дом недвижимость"><span class="result-thumb" aria-hidden="true"></span><span><strong>Двухкомнатная квартира</strong><small>Алматы · 62 м² · сегодня</small></span><span class="price">29,8 млн ₸</span></article>
+          <article class="result-card reveal" data-result data-search-tags="материалы стройматериалы ремонт инструмент товар"><span class="result-thumb" aria-hidden="true"></span><span><strong>Сухая смесь для ремонта</strong><small>Астана · доставка · вчера</small></span><span class="price">от 2 900 ₸</span></article>
+          <article class="result-card reveal" data-result data-search-tags="специалист мастер услуги сантехника"><span class="result-thumb" aria-hidden="true"></span><span><strong>Мастер по сантехнике</strong><small>Шымкент · рейтинг 4,8</small></span><span class="price">от 8 000 ₸</span></article>
+          <article class="result-card reveal" data-result data-search-tags="жильё участок дом недвижимость"><span class="result-thumb" aria-hidden="true"></span><span><strong>Участок под дом</strong><small>Конаев · 8 соток · сегодня</small></span><span class="price">12,4 млн ₸</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-shell section reveal" id="tariffs">
+      <h2 class="section-heading">Простой выбор<br>для объявления.</h2>
+      <div class="tariff-row">
+        <article class="tariff reveal"><strong>Старт</strong><span class="price-large">0 ₸</span><p>Одно объявление на 30 дней и базовая карточка.</p></article>
+        <article class="tariff featured reveal"><strong>Pro</strong><span class="price-large">4 900 ₸</span><p>Выше в списке, фото и быстрый ответ на вопросы.</p></article>
+        <article class="tariff reveal"><strong>Business</strong><span class="price-large">от 19 900 ₸</span><p>Пакет для компании, витрина и несколько сотрудников.</p></article>
+      </div>
+    </section>
+
+    <section class="site-shell section reveal" id="journal">
+      <h2 class="section-heading">Сначала полезный совет,<br>потом нужный раздел.</h2>
+      <div class="izi-paths">
+        <article class="path-card card reveal"><strong>Как посчитать ремонт</strong><p>Список материалов и расходы по комнатам.</p><a href="#results">Читать →</a></article>
+        <article class="path-card card reveal"><strong>Проверка квартиры</strong><p>Что спросить у продавца до просмотра.</p><a href="#results">Читать →</a></article>
+        <article class="path-card card reveal"><strong>Как выбрать мастера</strong><p>Цена, сроки и вопросы перед началом работы.</p><a href="#results">Читать →</a></article>
+      </div>
+    </section>
+
+    <section class="site-shell section reveal">
+      <h2 class="section-heading">Три примера<br>в одной папке.</h2>
+      <div class="preview-strip">
+        <a href="../izicity/"><img src="../../assets/previews/izi-preview.png" alt="Пример IziCity" loading="lazy"><span>IziCity</span></a>
+        <a href="../aipimedia/"><img src="../../assets/previews/aipi-preview.png" alt="Пример AiPiMedia" loading="lazy"><span>AiPiMedia</span></a>
+        <a href="../viadigital/"><img src="../../assets/previews/via-preview.png" alt="Пример ViaDigital" loading="lazy"><span>ViaDigital</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-band">
+    <div class="site-shell footer-grid">
+      <div><p class="wordmark">izicity</p><p class="muted">Путь от задачи к дому.</p></div>
+      <div class="footer-links"><a href="../../">Все примеры</a><a href="#paths">Каталог</a><a href="#tariffs">Тарифы</a></div>
+    </div>
+  </footer>
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
